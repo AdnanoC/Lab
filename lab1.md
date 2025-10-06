@@ -27,7 +27,10 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 - **Action:** Examined the `src_ip` field to determine which IP was responsible for most events.
 
-[Click for screenshot](https://https://github.com/user-attachments/assets/81c21865-b6bd-415f-9c9c-50139d1857e8)
+<details>
+  <summary>📸 Click for screenshot — 412 Events (Main Source)</summary>
+  <img width="624" height="123" alt="events412" src="https://github.com/user-attachments/assets/81c21865-b6bd-415f-9c9c-50139d1857e8" />
+</details>
 
 - **Observation:**  
   - `23.22.63.114` = 412 events (96.941%)
@@ -50,13 +53,20 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 - **Action:** Checked the `dest_ip` (destination IP) field.
 
-![Destination IP Breakdown](./screenshots/4.png)
+<details>
+  <summary>📸 Click for screenshot — Destination IP</summary>
+  <img width="583" height="227" alt="dest_ip" src="https://github.com/user-attachments/assets/f34a88e0-f81b-4146-9310-007a6ea4226d" />
+</details>
 
 - **Observation:**  
   - Destination IP: `192.168.250.70` (100% of events)
 
 - **Raw event evidence:**  
-![Destination IP in Raw Log](./screenshots/5.png)
+
+<details>
+  <summary>📸 Click for screenshot — Destination IP (Raw Evidence)</summary>
+  <img width="624" height="410" alt="dest_ip2" src="https://github.com/user-attachments/assets/afa65f11-3d8d-42b0-b32c-24168e4b0f89" />
+</details>
 
 ---
 
@@ -71,8 +81,12 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
   - Passwords used in different attempts (see below)
 
 **Evidence for `form_data` field:**  
-- Username and password attempt (`baby`):  
-![Username and Password in form_data](./screenshots/6.png)
+- Username and password attempt (`baby`):
+    
+<details>
+  <summary>📸 Click for screenshot — Username and Password Attempt</summary>
+  <img width="624" height="194" alt="user_pass" src="https://github.com/user-attachments/assets/ced11bfd-2039-4923-a565-0faa8a2ac326" />
+</details>
 
 ---
 
@@ -84,7 +98,11 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 ```
 - **Action:** Sorted by timestamp to identify the first attempted password.
 
-![Table of Credential Attempts](./screenshots/7.png)
+
+<details>
+  <summary>📸 Click for screenshot — Form Data (Time Sequence)</summary>
+  <img width="624" height="343" alt="Time_form_data" src="https://github.com/user-attachments/assets/24e054d1-6983-48f0-9b73-20190ec732cc" />
+</details>
 
 ---
 
