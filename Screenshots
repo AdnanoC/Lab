@@ -3,41 +3,4 @@ Screenshots
 
 ## 🖼️ Screenshots
 
-All screenshots are stored in the global `/Screenshots` folder for clean organization.
 
----
-
-<details>
-  <summary>📸 Click for screenshot — Events 425</summary>
-  <img width="624" height="147" alt="Events425" src="./Screenshots/events425.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — Source IP Breakdown</summary>
-  <img width="586" height="258" alt="src_ip" src="./Screenshots/src_ip.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — 412 Events (Main Source)</summary>
-  <img width="624" height="123" alt="events412" src="./Screenshots/events412.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — Destination IP</summary>
-  <img width="583" height="227" alt="dest_ip" src="./Screenshots/dest_ip.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — Destination IP (Raw Evidence)</summary>
-  <img width="624" height="410" alt="dest_ip2" src="./Screenshots/dest_ip2.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — Username and Password Attempt</summary>
-  <img width="624" height="194" alt="user_pass" src="./Screenshots/user_pass.png" />
-</details>
-
-<details>
-  <summary>📸 Click for screenshot — Form Data (Time Sequence)</summary>
-  <img width="624" height="343" alt="Time_form_data" src="./Screenshots/time_form_data.png" />
-</details>
