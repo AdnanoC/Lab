@@ -12,5 +12,5 @@ Each lab is self‑contained and follows a reproducible documentation template s
 
 ## Screenshots
 
-[Click here to browse all screenshots.](./screenshots/)
+[Click here to browse all screenshots.](./Screenshots/)
 
