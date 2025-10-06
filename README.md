@@ -10,7 +10,3 @@ Each lab is self‑contained and follows a reproducible documentation template s
 - [Splunk Lab 4](lab4.md)
 
 
-## Screenshots
-
-[Click here to browse all screenshots.](./Screenshots/)
-
