@@ -1,11 +1,8 @@
 # Splunk Lab 1: Incident Investigation & Brute Force Attack Analysis
 
-## Lab Description
-
-This lab simulates a real-world scenario where an attacker is brute-forcing login credentials against a web application’s admin portal. The goal is to use Splunk to identify the attack source, de[...]
-
-> All sensitive data is anonymized for compliance.
-
+## 🔍 Overview
+This lab investigates a simulated brute-force attack targeting a Joomla admin portal.  
+Using Splunk, I identified the attacker’s source IP, analyzed credential attempts, and confirmed attack patterns.
 ---
 
 ## Investigation Steps
@@ -16,8 +13,10 @@ This lab simulates a real-world scenario where an attacker is brute-forcing logi
 ```splunk
 index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administrator/index.php"
 ```
-- **Result:** 425 events detected  
-[Click for screenshot](https://github.com/user-attachments/assets/6aae804c-85c6-4364-8873-2980389906a3)
+<details>
+  <summary>📸 Click for screenshot — Events 425</summary>
+  <img width="624" height="147" alt="Events425" src="https://github.com/user-attachments/assets/6aae804c-85c6-4364-8873-2980389906a3" />
+</details>
 
 
 
@@ -38,18 +37,7 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 ---
 
-### 3. Filter by Top Source IP
-
-**Splunk Query:**
-```splunk
-index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administrator/index.php" src_ip="23.22.63.114"
-```
-- **Result:** 412 events from the top IP  
-![Filtered by Top Source IP](./screenshots/3.png)
-
----
-
-### 4. Find the Destination IP
+### 3. Find the Destination IP
 
 - **Action:** Checked the `dest_ip` (destination IP) field.
 
@@ -70,7 +58,7 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 ---
 
-### 5. Analyze Credential Attempts
+### 4. Analyze Credential Attempts
 
 #### a. Identify Username and Password Used by Attacker
 
@@ -106,21 +94,8 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 ---
 
-## Key Findings (with Evidence)
 
-| Step | Question                                 | Evidence (Screenshot) | Finding                        |
-|------|------------------------------------------|----------------------|--------------------------------|
-| 1    | Total POST login events                  | 1                    | 425                            |
-| 2    | Main attack source IP                    | 2                    | 23.22.63.114                   |
-| 3    | Events from main source IP               | 3                    | 412                            |
-| 4    | Destination (web server) IP              | 4, 5                 | 192.168.250.70                 |
-| 5    | Username attempted                       | 5, 6                 | admin                          |
-| 6    | Example password attempted (from event)  | 6                    | baby (see form_data value)     |
-| 7    | Full list of attempted passwords, sorted | 7                    | See screenshot for attempts    |
-
----
-
-## Professional Insights
+##  Insights
 
 - **Log Correlation:** Cross-referenced HTTP and system log types to confirm brute force activity and credential patterns.
 - **Attack Attribution:** Identified the main attacking IP and methodically extracted credential attempts.
@@ -147,7 +122,8 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 1. Duplicate this README.md for each new lab (e.g., `splunk-2/README.md`).
 2. Update scenario details, queries, and anonymized data per lab.
-3. Document your process—valuable for both technical assessment and interview discussions.
+3. Document your process—valuable for both technical assessment and interview discussions
+ 
 
 ---
 
