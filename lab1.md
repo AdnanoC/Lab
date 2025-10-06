@@ -17,8 +17,8 @@ This lab simulates a real-world scenario where an attacker is brute-forcing logi
 index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administrator/index.php"
 ```
 - **Result:** 425 events detected  
-[View Screenshot of 425 Events]
-<img width="624" height="147" alt="Events425" src="https://github.com/user-attachments/assets/6aae804c-85c6-4364-8873-2980389906a3" />
+[Click for screenshot](https://github.com/user-attachments/assets/6aae804c-85c6-4364-8873-2980389906a3)
+
 
 
 ---
