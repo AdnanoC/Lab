@@ -27,7 +27,7 @@ index="botsv1" sourcetype="stream:http" http_method=POST uri="/joomla/administra
 
 - **Action:** Examined the `src_ip` field to determine which IP was responsible for most events.
 
-![Source IP Breakdown](./screenshots/2.png)
+[Click for screenshot](https://https://github.com/user-attachments/assets/81c21865-b6bd-415f-9c9c-50139d1857e8)
 
 - **Observation:**  
   - `23.22.63.114` = 412 events (96.941%)
